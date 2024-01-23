@@ -24,7 +24,7 @@ y_pred = mod.predict(X_test)
 r2 = r2_score(y_test, y_pred)
 print("R2 Score:", r2)
 
-#2. LOSISTIC REGRESSION USING BREAST CANCER DATASET
+#2. LOGISTIC REGRESSION USING BREAST CANCER DATASET
 # In[16]:
 
 
