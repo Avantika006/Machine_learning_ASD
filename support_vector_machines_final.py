@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# LOGISTIC REGRESSION USING BREAST CANCER DATASET - WITH STANDARDIZATION AND 10 FOLD CV
+# SVM CLASSIFIER USING BREAST CANCER DATASET - WITH STANDARDIZATION AND 10 FOLD CV
 # In[16]:
 
 from numpy import mean
@@ -9,7 +9,7 @@ from numpy import std
 import numpy as np
 from tabulate import tabulate
 from sklearn.datasets import load_breast_cancer
-from sklearn.linear_model import LogisticRegression
+from sklearn import svm
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import accuracy_score
@@ -24,7 +24,7 @@ X, y = load_breast_cancer(return_X_y=True)
 
 # Standardization of the dataset and performing logistic regression
 trans = StandardScaler()
-mod = LogisticRegression(max_iter=5000)
+mod = svm.SVC(probability=True)
 
 #Declaring arrays for various metrics
 #accuracy = []
