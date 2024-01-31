@@ -23,7 +23,7 @@ process_csv <- function(file_path) {
 }
 
 # List of CSV files
-files <- c("core_descriptive_variables-2023-07-21.csv", "basic_medical_screening-2023-07-21.csv", "cbcl_1_5-2023-07-21.csv","cbcl_6_18-2023-07-21.csv","dcdq-2023-07-21.csv","individuals_registration-2023-07-21.csv","predicted_iq_experimental-2023-07-21.csv","rbsr-2023-07-21.csv","roles_2023-07-17.csv","scq-2023-07-21.csv","srs-2_adult_self-2023-07-21.csv","vineland-3-2023-07-21.csv")
+files <- c("core_descriptive_variables-2023-07-21.csv","background_history_sibling-2023-07-21.csv", "basic_medical_screening-2023-07-21.csv", "cbcl_1_5-2023-07-21.csv","cbcl_6_18-2023-07-21.csv","dcdq-2023-07-21.csv","individuals_registration-2023-07-21.csv","predicted_iq_experimental-2023-07-21.csv","rbsr-2023-07-21.csv","roles_2023-07-17.csv","scq-2023-07-21.csv","srs-2_adult_self-2023-07-21.csv","vineland-3-2023-07-21.csv")
 
 # Process each file
 for (file in files) {
