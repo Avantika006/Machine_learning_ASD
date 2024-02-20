@@ -57,7 +57,7 @@ features = df.drop(columns=['subject_sp_id', 'respondent_sp_id', 'family_sf_id',
                             'gen_test_tsc','gen_test_unknown','gen_test_wes','gen_test_wgs','gen_test_oth_calc','growth_low_wt','growth_macroceph',
                             'growth_microceph','growth_obes','growth_short','growth_oth_calc','prev_study_calc','eval_year','neuro_inf','neuro_lead',
                             'neuro_sz','neuro_tbi','neuro_oth_calc','pers_dis','prev_study_oth_calc','psych_oth_calc','schiz','visaud_blind',
-                            'visaud_catar','visaud_deaf','visaud_strab','tics']).copy()
+                            'visaud_catar','visaud_deaf','visaud_strab','tics','asd','behav_adhd']).copy()
 
 # Resetting indices after dropping irrelevant columns
 features.reset_index(drop=True, inplace=True)
